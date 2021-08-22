@@ -1,5 +1,4 @@
 require "minitest/autorun"
-#require "minitest"
 
 require "minitest_worker"
 
@@ -28,4 +27,5 @@ class VersionTest < Minitest::Test
   end
 end
 
-#Minitest.run(%w{-n /VersionTest.test_expensive|VersionTest.test_cheaper/})
+Minitest.run(%w{-n /VersionTest.test_expensive|VersionTest.test_cheaper/})
+Minitest.run(%w{-n /VersionTest.test_expensive|VersionTest.test_cheaper/})
